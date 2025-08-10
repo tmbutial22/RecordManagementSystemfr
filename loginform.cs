@@ -34,5 +34,11 @@ namespace RecordManagementSystemfr
                 password.PasswordChar = '\0';
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            dashboard dashboard = new dashboard();
+            dashboard.Show();
+        }
     }
 }

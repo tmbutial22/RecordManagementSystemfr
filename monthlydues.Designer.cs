@@ -1,6 +1,6 @@
 ﻿namespace RecordManagementSystemfr
 {
-    partial class dashboard
+    partial class monthlydues
     {
         /// <summary>
         /// Required designer variable.
@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dashboard));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(monthlydues));
             this.panel1 = new System.Windows.Forms.Panel();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnlogout = new System.Windows.Forms.Button();
             this.btnprofile = new System.Windows.Forms.Button();
             this.btndocu = new System.Windows.Forms.Button();
             this.btnvisitor = new System.Windows.Forms.Button();
@@ -43,8 +43,6 @@
             this.btnouncement = new System.Windows.Forms.Button();
             this.btnmonthly = new System.Windows.Forms.Button();
             this.btndashb = new System.Windows.Forms.Button();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.btnlogout = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -60,7 +58,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1257, 79);
-            this.panel1.TabIndex = 0;
+            this.panel1.TabIndex = 4;
             // 
             // iconPictureBox1
             // 
@@ -94,7 +92,20 @@
             this.panel2.Location = new System.Drawing.Point(0, 79);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(227, 828);
-            this.panel2.TabIndex = 1;
+            this.panel2.TabIndex = 5;
+            // 
+            // btnlogout
+            // 
+            this.btnlogout.BackColor = System.Drawing.Color.Transparent;
+            this.btnlogout.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnlogout.BackgroundImage")));
+            this.btnlogout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnlogout.FlatAppearance.BorderSize = 0;
+            this.btnlogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnlogout.Location = new System.Drawing.Point(0, 775);
+            this.btnlogout.Name = "btnlogout";
+            this.btnlogout.Size = new System.Drawing.Size(227, 53);
+            this.btnlogout.TabIndex = 5;
+            this.btnlogout.UseVisualStyleBackColor = false;
             // 
             // btnprofile
             // 
@@ -148,7 +159,6 @@
             this.panelsched.Name = "panelsched";
             this.panelsched.Size = new System.Drawing.Size(228, 181);
             this.panelsched.TabIndex = 2;
-            this.panelsched.Paint += new System.Windows.Forms.PaintEventHandler(this.panelscheds_Paint);
             // 
             // btnscheds
             // 
@@ -162,7 +172,6 @@
             this.btnscheds.Size = new System.Drawing.Size(227, 53);
             this.btnscheds.TabIndex = 3;
             this.btnscheds.UseVisualStyleBackColor = false;
-            this.btnscheds.Click += new System.EventHandler(this.btnscheds_Click_1);
             // 
             // btnevents
             // 
@@ -227,25 +236,7 @@
             this.btndashb.TabIndex = 0;
             this.btndashb.UseVisualStyleBackColor = true;
             // 
-            // timer1
-            // 
-            this.timer1.Interval = 15;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // btnlogout
-            // 
-            this.btnlogout.BackColor = System.Drawing.Color.Transparent;
-            this.btnlogout.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnlogout.BackgroundImage")));
-            this.btnlogout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnlogout.FlatAppearance.BorderSize = 0;
-            this.btnlogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnlogout.Location = new System.Drawing.Point(0, 775);
-            this.btnlogout.Name = "btnlogout";
-            this.btnlogout.Size = new System.Drawing.Size(227, 53);
-            this.btnlogout.TabIndex = 5;
-            this.btnlogout.UseVisualStyleBackColor = false;
-            // 
-            // dashboard
+            // monthlydues
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -253,9 +244,9 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "dashboard";
+            this.Name = "monthlydues";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "dashboard";
+            this.Text = "monthlydues";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
@@ -269,17 +260,16 @@
         private System.Windows.Forms.Panel panel1;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btndashb;
-        private System.Windows.Forms.Button btnmonthly;
-        private System.Windows.Forms.Button btnouncement;
-        private System.Windows.Forms.Button btnscheds;
+        private System.Windows.Forms.Button btnlogout;
+        private System.Windows.Forms.Button btnprofile;
+        private System.Windows.Forms.Button btndocu;
+        private System.Windows.Forms.Button btnvisitor;
         private System.Windows.Forms.FlowLayoutPanel panelsched;
+        private System.Windows.Forms.Button btnscheds;
         private System.Windows.Forms.Button btnevents;
         private System.Windows.Forms.Button btngarbage;
-        private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Button btnvisitor;
-        private System.Windows.Forms.Button btndocu;
-        private System.Windows.Forms.Button btnprofile;
-        private System.Windows.Forms.Button btnlogout;
+        private System.Windows.Forms.Button btnouncement;
+        private System.Windows.Forms.Button btnmonthly;
+        private System.Windows.Forms.Button btndashb;
     }
 }
